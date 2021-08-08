@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E06079AA26BF830D002D323B /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079A926BF830D002D323B /* TaskItem.swift */; };
+		E06079B326BF8967002D323B /* TaskDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079B226BF8967002D323B /* TaskDetailController.swift */; };
+		E06079BB26BF8C50002D323B /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079BA26BF8C50002D323B /* AddTaskController.swift */; };
+		E06079C426BF8E75002D323B /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079C326BF8E75002D323B /* TypeAliases.swift */; };
+		E06079CC26BF9DE5002D323B /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079CB26BF9DE5002D323B /* TaskListViewModel.swift */; };
+		E06079D126BF9E2D002D323B /* TaskListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079D026BF9E2D002D323B /* TaskListViewModelProtocol.swift */; };
+		E06079D626BFA225002D323B /* TaskDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079D526BFA225002D323B /* TaskDetailViewModel.swift */; };
+		E06079DB26BFA247002D323B /* TaskDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079DA26BFA247002D323B /* TaskDetailViewModelProtocol.swift */; };
+		E06079E026BFA7EF002D323B /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079DF26BFA7EF002D323B /* AddTaskViewModel.swift */; };
+		E06079E526BFA818002D323B /* AddTaskViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06079E426BFA818002D323B /* AddTaskViewModelProtocol.swift */; };
 		E0756D2126BF7DB000624F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D2026BF7DB000624F4A /* AppDelegate.swift */; };
 		E0756D2326BF7DB000624F4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D2226BF7DB000624F4A /* SceneDelegate.swift */; };
-		E0756D2526BF7DB000624F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D2426BF7DB000624F4A /* ViewController.swift */; };
+		E0756D2526BF7DB000624F4A /* TaskListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D2426BF7DB000624F4A /* TaskListController.swift */; };
 		E0756D2826BF7DB000624F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0756D2626BF7DB000624F4A /* Main.storyboard */; };
 		E0756D2A26BF7DB200624F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0756D2926BF7DB200624F4A /* Assets.xcassets */; };
 		E0756D2D26BF7DB200624F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0756D2B26BF7DB200624F4A /* LaunchScreen.storyboard */; };
 		E0756D3826BF7DB200624F4A /* MyTodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D3726BF7DB200624F4A /* MyTodoListTests.swift */; };
 		E0756D4326BF7DB200624F4A /* MyTodoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0756D4226BF7DB200624F4A /* MyTodoListUITests.swift */; };
+		E0756D5526BF7FB600624F4A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E0756D5426BF7FB600624F4A /* Realm */; };
+		E0756D5726BF7FB600624F4A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0756D5626BF7FB600624F4A /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +47,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E06079A926BF830D002D323B /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		E06079B226BF8967002D323B /* TaskDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailController.swift; sourceTree = "<group>"; };
+		E06079BA26BF8C50002D323B /* AddTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
+		E06079C326BF8E75002D323B /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		E06079CB26BF9DE5002D323B /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		E06079D026BF9E2D002D323B /* TaskListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelProtocol.swift; sourceTree = "<group>"; };
+		E06079D526BFA225002D323B /* TaskDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewModel.swift; sourceTree = "<group>"; };
+		E06079DA26BFA247002D323B /* TaskDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		E06079DF26BFA7EF002D323B /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		E06079E426BFA818002D323B /* AddTaskViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModelProtocol.swift; sourceTree = "<group>"; };
 		E0756D1D26BF7DB000624F4A /* MyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0756D2026BF7DB000624F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0756D2226BF7DB000624F4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0756D2426BF7DB000624F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0756D2426BF7DB000624F4A /* TaskListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListController.swift; sourceTree = "<group>"; };
 		E0756D2726BF7DB000624F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0756D2926BF7DB200624F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0756D2C26BF7DB200624F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0756D5726BF7FB600624F4A /* RealmSwift in Frameworks */,
+				E0756D5526BF7FB600624F4A /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E06079A826BF82F3002D323B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E06079A926BF830D002D323B /* TaskItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E06079C226BF8E59002D323B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E06079C326BF8E75002D323B /* TypeAliases.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E0756D1426BF7DB000624F4A = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +139,11 @@
 		E0756D1F26BF7DB000624F4A /* MyTodoList */ = {
 			isa = PBXGroup;
 			children = (
-				E0756D2026BF7DB000624F4A /* AppDelegate.swift */,
-				E0756D2226BF7DB000624F4A /* SceneDelegate.swift */,
-				E0756D2426BF7DB000624F4A /* ViewController.swift */,
-				E0756D2626BF7DB000624F4A /* Main.storyboard */,
+				E06079C226BF8E59002D323B /* Helpers */,
+				E0756D6226BF812000624F4A /* App */,
+				E06079A826BF82F3002D323B /* Model */,
+				E0756D5E26BF80E500624F4A /* Scenes */,
 				E0756D2926BF7DB200624F4A /* Assets.xcassets */,
-				E0756D2B26BF7DB200624F4A /* LaunchScreen.storyboard */,
 				E0756D2E26BF7DB200624F4A /* Info.plist */,
 			);
 			path = MyTodoList;
@@ -128,6 +167,57 @@
 			path = MyTodoListUITests;
 			sourceTree = "<group>";
 		};
+		E0756D5E26BF80E500624F4A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E0756D2626BF7DB000624F4A /* Main.storyboard */,
+				E0756D2B26BF7DB200624F4A /* LaunchScreen.storyboard */,
+				E0756D5F26BF80ED00624F4A /* TaskListController */,
+				E0756D6126BF810500624F4A /* TaskDetailController */,
+				E0756D6026BF80FC00624F4A /* AddTaskController */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E0756D5F26BF80ED00624F4A /* TaskListController */ = {
+			isa = PBXGroup;
+			children = (
+				E0756D2426BF7DB000624F4A /* TaskListController.swift */,
+				E06079CB26BF9DE5002D323B /* TaskListViewModel.swift */,
+				E06079D026BF9E2D002D323B /* TaskListViewModelProtocol.swift */,
+			);
+			path = TaskListController;
+			sourceTree = "<group>";
+		};
+		E0756D6026BF80FC00624F4A /* AddTaskController */ = {
+			isa = PBXGroup;
+			children = (
+				E06079BA26BF8C50002D323B /* AddTaskController.swift */,
+				E06079DF26BFA7EF002D323B /* AddTaskViewModel.swift */,
+				E06079E426BFA818002D323B /* AddTaskViewModelProtocol.swift */,
+			);
+			path = AddTaskController;
+			sourceTree = "<group>";
+		};
+		E0756D6126BF810500624F4A /* TaskDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				E06079B226BF8967002D323B /* TaskDetailController.swift */,
+				E06079D526BFA225002D323B /* TaskDetailViewModel.swift */,
+				E06079DA26BFA247002D323B /* TaskDetailViewModelProtocol.swift */,
+			);
+			path = TaskDetailController;
+			sourceTree = "<group>";
+		};
+		E0756D6226BF812000624F4A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E0756D2026BF7DB000624F4A /* AppDelegate.swift */,
+				E0756D2226BF7DB000624F4A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +234,10 @@
 			dependencies = (
 			);
 			name = MyTodoList;
+			packageProductDependencies = (
+				E0756D5426BF7FB600624F4A /* Realm */,
+				E0756D5626BF7FB600624F4A /* RealmSwift */,
+			);
 			productName = MyTodoList;
 			productReference = E0756D1D26BF7DB000624F4A /* MyTodoList.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +309,9 @@
 				Base,
 			);
 			mainGroup = E0756D1426BF7DB000624F4A;
+			packageReferences = (
+				E0756D5326BF7FB600624F4A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = E0756D1E26BF7DB000624F4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0756D2526BF7DB000624F4A /* ViewController.swift in Sources */,
+				E0756D2526BF7DB000624F4A /* TaskListController.swift in Sources */,
+				E06079E026BFA7EF002D323B /* AddTaskViewModel.swift in Sources */,
 				E0756D2126BF7DB000624F4A /* AppDelegate.swift in Sources */,
+				E06079D126BF9E2D002D323B /* TaskListViewModelProtocol.swift in Sources */,
+				E06079BB26BF8C50002D323B /* AddTaskController.swift in Sources */,
+				E06079AA26BF830D002D323B /* TaskItem.swift in Sources */,
+				E06079B326BF8967002D323B /* TaskDetailController.swift in Sources */,
+				E06079CC26BF9DE5002D323B /* TaskListViewModel.swift in Sources */,
+				E06079C426BF8E75002D323B /* TypeAliases.swift in Sources */,
+				E06079D626BFA225002D323B /* TaskDetailViewModel.swift in Sources */,
+				E06079DB26BFA247002D323B /* TaskDetailViewModelProtocol.swift in Sources */,
+				E06079E526BFA818002D323B /* AddTaskViewModelProtocol.swift in Sources */,
 				E0756D2326BF7DB000624F4A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +700,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0756D5326BF7FB600624F4A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0756D5426BF7FB600624F4A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0756D5326BF7FB600624F4A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		E0756D5626BF7FB600624F4A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0756D5326BF7FB600624F4A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0756D1526BF7DB000624F4A /* Project object */;
 }
