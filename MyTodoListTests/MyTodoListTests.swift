@@ -6,28 +6,38 @@
 //
 
 import XCTest
+import RealmSwift
 @testable import MyTodoList
 
-class MyTodoListTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class TaskListViewModelTest: XCTestCase {
+    let realm = try! Realm()
+    func testFetchTask() {
+        let count: Int = 2
+        let vm = TaskListViewModel()
+        vm.fetchTasks()
+        XCTAssertEqual(count, vm.data.count)
     }
+}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+class TaskDetailViewModelTest: XCTestCase {
+    let realm = try! Realm()
+    func testDeleteItem() {
+        let data = realm.objects(TaskItem.self).map({ $0 })
+        let count = data.count
+        let vm = TaskDetailViewModel(taskItem: data[0])
+        vm.deleteItem {}
+        XCTAssertEqual(count - 1, data.count)
     }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+class AddTaskViewModelTest: XCTestCase {
+    let realm = try! Realm()
+    func testAddTaskItem() {
+        let data = realm.objects(TaskItem.self).map({ $0 })
+        let count = data.count
+        let vm = AddTaskViewModel()
+        vm.addTaskItem("New Item_\(count + 1)", date: Date()) {}
+        let newCount = realm.objects(TaskItem.self).map({ $0 }).count
+        XCTAssertEqual(count + 1, newCount)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

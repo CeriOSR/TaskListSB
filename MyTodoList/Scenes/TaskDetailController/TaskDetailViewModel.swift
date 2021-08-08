@@ -18,11 +18,10 @@ class TaskDetailViewModel: TaskDetailViewModelProtocol {
     }
     
     func deleteItem(
-        _ task: TaskItem,
         completion: @escaping VoidResult
     ) {
         realm.beginWrite()
-        realm.delete(task)
+        realm.delete(taskItem)
         try! realm.commitWrite()
         deletionHandler?()
         completion()

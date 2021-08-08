@@ -41,7 +41,7 @@ private extension TaskDetailController {
 // MARK: - Actions
 extension TaskDetailController {
     @objc private func didTapDelete() {
-        viewmodel.deleteItem(viewmodel.taskItem) { [weak self] in
+        viewmodel.deleteItem { [weak self] in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)

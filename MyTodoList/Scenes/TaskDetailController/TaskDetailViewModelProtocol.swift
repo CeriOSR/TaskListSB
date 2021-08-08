@@ -12,7 +12,6 @@ protocol TaskDetailViewModelProtocol {
     var deletionHandler: VoidResult? {get set}
     
     func deleteItem(
-        _ task: TaskItem,
         completion: @escaping VoidResult
-    ) 
+    )
 }
